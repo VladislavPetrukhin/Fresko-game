@@ -1,0 +1,116 @@
+.header,.section{
+    color:white;
+}
+.header{
+    height: 100px;
+}
+.overlay{
+
+    text-align: center;
+    font-size: 150%;
+    margin: 50px 10px 0 10px;
+}
+.startButton{
+    font-size: 42px;
+    display: flex;
+    margin: auto;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid #e0121e;
+    background: linear-gradient( 0deg, #ec212b, #fa7169);
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 100px 100px 100px 100px / 200% 200%;
+    box-shadow: 0 5px 10px 0 rgba(255, 111, 170, 1);
+    text-shadow: 1px 1px 2px gray, 0 0 1em red;
+}
+.input{
+    size:20px;
+}
+.exerciseBox{
+    display: inline;
+    width: 50%;
+}
+.section{
+    text-align: center;
+}
+.hText{
+    font-size: 72px;
+}
+.body{
+    background-color: #323131;
+}
+.exercise{
+    font-size:60px;
+}
+.input{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.answerButton{
+    margin-top: 30px;
+    font-size: 40px;
+    color:white;
+    background-color: rgba(1,1,1,0.5);
+    border: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+.jak{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding:20px;
+}
+.jak2{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+body {
+
+}
+
+
+body:before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+}
+
+body:hover:before {
+    opacity: 1;
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.body2{
+    background-color: #00ffd5;
+}
